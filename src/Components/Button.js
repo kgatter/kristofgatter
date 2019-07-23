@@ -19,7 +19,10 @@ export class KGButton extends React.Component {
 
     return (
         <Button
-           className={buttonClasses}>
+           tag="span"
+           className={buttonClasses}
+           {...this.props}
+           >
            {this.props.children}
         </Button>
       )

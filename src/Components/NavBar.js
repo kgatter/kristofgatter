@@ -1,28 +1,60 @@
 import React from 'react';
-import {LINKS} from "../Links";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
+import { withRouter } from "react-router";
 import classNames from 'classnames';
+import PropTypes from "prop-types";
 
 
 import {Row, Col, Container} from 'reactstrap';
 import styles from "./NavBar.module.scss"
+import { ReactComponent as BackButton } from '../Images/backbutton.svg';
 
 
-function NavBar() {
+export class NavBar extends React.Component {
 
-    let navClasses = classNames(
+    static propTypes = {
+      match: PropTypes.object.isRequired,
+      location: PropTypes.object.isRequired,
+      history: PropTypes.object.isRequired
+    };
+
+    render() {
+
+    const { match, location, history } = this.props;
+    const currentLocationHome = location.pathname.length > 1;
+
+    const navClasses = classNames(
       styles.NavBar,
+      'text-center text-md-left'
     );
+
+    const backButtonClasses = classNames(
+      styles.BackButton,
+      {[styles.visible]: true}
+    );
+
+    const locationDisplayClasses = classNames(
+      styles.displayLocation,
+    );
+
+    const locationDisplayText = location.pathname.split('/',2);
 
     return <nav className={navClasses}>
       <Container>
           <Row>
-            <Col>
-              Kristof Gatter <b>Digital Product Designer</b>
+            <Col className={styles.NavCol}>
+              <Link className={styles.BackLink} to={"/"}>
+                {currentLocationHome ? <BackButton className={backButtonClasses} /> : null}
+                <span>Kristof Gatter <b>Digital Product Designer</b></span>
+              </Link>
+              {currentLocationHome ? <span className={locationDisplayClasses}>{locationDisplayText}</span> : null}
             </Col>
           </Row>
       </Container>
     </nav>
+    }
 }
 
-export default NavBar;
+const NavBarWithRouter = withRouter(NavBar);
+
+export default NavBarWithRouter;

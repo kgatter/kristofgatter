@@ -1,7 +1,45 @@
 @import '../Styles/Global';
 
 .NavBar {
+  width: 100%;
+  background: white;
+  z-index: 1000;
   font-size: $fontSizeM;
   margin: $standardSpacing 0;
   padding: $standardSpacing 0;
+}
+
+.NavCol {
+}
+.BackLink {
+  color: black;
+
+  &:hover {
+    text-decoration: none;
+    color: #666;
+
+    svg {
+      transform: translateX(-10px);
+    }
+  }
+
+}
+
+.displayLocation {
+  &:before { content: "\00a0/\00a0" }
+  text-transform: capitalize;
+
+}
+
+.BackButton {
+    position: relative;
+    display: inline-block;
+    transition: transform 250ms, opacity 250ms;
+    transform: translateX(0);
+    opacity: 0;
+    margin-top:-0.15em;
+    margin-right: 0.7em;
+    &.visible {
+      opacity: 1;
+    }
 }

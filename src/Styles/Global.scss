@@ -22,3 +22,7 @@ p {
 b {
   font-weight: 500;
 }
+
+svg {
+  & * {fill: currentColor;}
+}

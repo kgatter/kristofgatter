@@ -24,7 +24,7 @@ function MainPage() {
             <Row className={[styles.Row, "justify-content-between"].join(' ')}>
                 <Col md="7" fluid className="text-center text-md-left order-2 order-md-1">
                     <h1>{headline}</h1>
-                    <KGButton green>{button1}</KGButton>
+                    <a href="mailto:mail@kristofgatter.com"><KGButton green>{button1}</KGButton></a>
                 </Col>
                 <Col md="4" className="text-center text-md-right order-1 order-md-2">
                   <img className={styles.Portrait} src={portrait} alt="Kristof Gatter's Portrait"/>
@@ -34,14 +34,14 @@ function MainPage() {
               <Col md="8">
                 <p>{paragraph1}</p>
                 <p>{paragraph2}</p>
-                <KGButton purple>{button2}</KGButton>
+                <Link to={LINKS.WORK}><KGButton purple>{button2}</KGButton></Link>
               </Col>
             </Row>
             <Row className={styles.Row}>
               <Col md="8">
                 <p>{paragraph3}</p>
                 <p>{paragraph4}</p>
-                <KGButton sand>{button3}</KGButton>
+                <Link to={LINKS.MENTORING}><KGButton sand>{button3}</KGButton></Link>
               </Col>
             </Row>
         </Container>

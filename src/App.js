@@ -6,6 +6,8 @@ import {LINKS} from "./Links";
 
 import NavBar from "./Components/NavBar";
 import MainPage from "./Pages/MainPage";
+import WorkPage from "./Pages/WorkPage";
+import MentoringPage from "./Pages/MentoringPage";
 
 
 function App() {
@@ -31,11 +33,13 @@ function App() {
   return (
     <div className="App">
       <Suspense fallback="loading">
-        <NavBar />
         <Router history={history}>
+          <NavBar />
           <ScrollToTop>
             <Switch>
               <Route exact path={LINKS.ROOT} component={MainPage} />
+              <Route exact path={LINKS.WORK} component={WorkPage} />
+              <Route exact path={LINKS.MENTORING} component={MentoringPage} />
             </Switch>
           </ScrollToTop>
         </Router>
