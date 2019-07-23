@@ -1,5 +1,7 @@
 @import '../Styles/Global';
 
 .NavBar {
+  font-size: $fontSizeM;
   margin: $standardSpacing 0;
+  padding: $standardSpacing 0;
 }

@@ -4,11 +4,19 @@
 
 body {
   font-family: $fontFamily;
-  font-size: $fontSizeM;
+  font-size: $fontSizeL;
 }
 
 h1, h2, h3, h4, h5 {
   font-weight: 400;
+  margin-bottom: 1.2em;
+}
+
+p {
+  margin-bottom: 1em;
+  &:last-of-type {
+    margin-bottom: 2em;
+  }
 }
 
 b {

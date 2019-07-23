@@ -10,10 +10,9 @@ import styles from "./NavBar.module.scss"
 
 function NavBar() {
 
-    let navClasses = classNames({
-      'NavBar': true,
-      'BackButton': false
-    })
+    let navClasses = classNames(
+      styles.NavBar,
+    );
 
     return <nav className={navClasses}>
       <Container>

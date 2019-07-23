@@ -1,7 +1,10 @@
 import React from 'react';
-import {Row, Col, Container, Button} from 'reactstrap';
+import {Row, Col, Container} from 'reactstrap';
 import {LINKS} from "../Links";
 import {Link} from "react-router-dom";
+
+import KGButton from "../Components/Button";
+import styles from "./MainPage.module.scss";
 
 
 
@@ -17,24 +20,25 @@ function MainPage() {
     button3 = "Read More About Mentoring"
 
     return <Container>
-            <Row>
+            <Row className={styles.Row}>
                 <Col md="8">
                     <h1>{headline}</h1>
-                    <Button size="lg">{button1}</Button>
+                    <KGButton green>{button1}</KGButton>
                 </Col>
+                <Col></Col>
             </Row>
-            <Row>
+            <Row className={styles.Row}>
               <Col md="8">
                 <p>{paragraph1}</p>
                 <p>{paragraph2}</p>
-                <Button size="lg">{button2}</Button>
+                <KGButton purple>{button2}</KGButton>
               </Col>
             </Row>
-            <Row>
+            <Row className={styles.Row}>
               <Col md="8">
                 <p>{paragraph3}</p>
                 <p>{paragraph4}</p>
-                <Button size="lg">{button3}</Button>
+                <KGButton sand>{button3}</KGButton>
               </Col>
             </Row>
         </Container>
