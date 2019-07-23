@@ -1,9 +1,10 @@
 import React, { Suspense } from 'react';
 import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import { createBrowserHistory } from 'history';
-import ScrollToTop from 'react-router-scroll-top'
-import {LINKS} from "./Links"
+import ScrollToTop from 'react-router-scroll-top';
+import {LINKS} from "./Links";
 
+import NavBar from "./Components/NavBar";
 import MainPage from "./Pages/MainPage";
 
 
@@ -30,6 +31,7 @@ function App() {
   return (
     <div className="App">
       <Suspense fallback="loading">
+        <NavBar />
         <Router history={history}>
           <ScrollToTop>
             <Switch>

@@ -1,0 +1,25 @@
+@import url("../Fonts/font.css");
+
+$fontSizeXL: 45px;
+$fontSizeL: 30px;
+$fontSizeM: 20px;
+$fontSizeS: 14px;
+$fontSizeXS: 10px;
+
+$fontFamily: 'Graphik Web', sans-serif;
+
+$standardSpacing: 20px;
+
+@mixin headline($fontSizeThis) {
+    font-family: $fontFamily;
+    font-size: $fontSizeL;
+    line-height: 1.2em;
+    font-weight: 400;
+}
+
+@mixin paragraph($fontSizeThis) {
+    font-family: $fontFamily;
+    font-size: $fontSizeThis;
+    line-height: 1.3em;
+    font-weight: 400;
+}

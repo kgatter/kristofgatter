@@ -1,0 +1,16 @@
+@import "~bootstrap/scss/bootstrap";
+@import "./Typography";
+
+
+body {
+  font-family: $fontFamily;
+  font-size: $fontSizeM;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 400;
+}
+
+b {
+  font-weight: 500;
+}
