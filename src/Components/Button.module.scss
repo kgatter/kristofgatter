@@ -1,0 +1,31 @@
+$green: #6DFF69;
+$purple: #F2CFEA;
+$sand: #FFD89D;
+
+@mixin buttonColor($bgcolor:#ccc, $textcolor:black) {
+  color: $textcolor;
+  background-color: $bgcolor;
+  border-color: $bgcolor;
+  &:hover {
+    color: $textcolor;
+    background-color: darken($bgcolor, 25%);
+    border-color: darken($bgcolor, 25%);
+  }
+}
+
+.Button {
+  @include buttonColor;
+  font-size: 1em;
+  padding: 0.55em 2.5em 0.6em 2.5em;
+  border-radius: 10px;
+
+  &_green {
+    @include buttonColor($bgcolor: $green)
+  }
+  &_purple {
+    @include buttonColor($bgcolor: $purple)
+  }
+  &_sand {
+    @include buttonColor($bgcolor: $sand)
+  }
+}
