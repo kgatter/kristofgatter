@@ -2,6 +2,7 @@ import React from 'react';
 import {Row, Col, Container} from 'reactstrap';
 import {LINKS} from "../Links";
 import {Link} from "react-router-dom";
+import portrait from "../Images/portrait.png"
 
 import KGButton from "../Components/Button";
 import styles from "./MainPage.module.scss";
@@ -20,12 +21,14 @@ function MainPage() {
     button3 = "Read More About Mentoring"
 
     return <Container>
-            <Row className={styles.Row}>
-                <Col md="8">
+            <Row className={[styles.Row, "justify-content-between"].join(' ')}>
+                <Col md="7" fluid className="text-center text-md-left order-2 order-md-1">
                     <h1>{headline}</h1>
                     <KGButton green>{button1}</KGButton>
                 </Col>
-                <Col></Col>
+                <Col md="4" className="text-center text-md-right order-1 order-md-2">
+                  <img className={styles.Portrait} src={portrait} alt="Kristof Gatter's Portrait"/>
+                </Col>
             </Row>
             <Row className={styles.Row}>
               <Col md="8">
