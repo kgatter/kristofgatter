@@ -1,0 +1,9 @@
+@import "../Styles/Global";
+
+.Row {
+  padding: 100px 0
+}
+
+.smallParagraph {
+  @include paragraph($fontSizeM);
+}

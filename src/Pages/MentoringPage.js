@@ -2,7 +2,7 @@ import React from 'react';
 import {Row, Col, Container} from 'reactstrap';
 
 import KGButton from "../Components/Button";
-import styles from "./MainPage.module.scss";
+import pageStyles from "./PageLayout.module.scss";
 
 
 
@@ -14,8 +14,8 @@ function MentoringPage() {
     button1 = "Get in Touch"
 
     return <Container>
-            <Row className={[styles.Row, "justify-content-between"].join(' ')}>
-              <Col md="8" fluid className="text-center text-md-left order-2 order-md-1">
+            <Row className={pageStyles.Row}>
+              <Col md="8" fluid>
                   <h1>{headline}</h1>
                 <a href="mailto:mail@kristofgatter.com"><KGButton green>{button1}</KGButton></a>
               </Col>

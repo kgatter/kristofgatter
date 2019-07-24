@@ -1,0 +1,9 @@
+@import "../Styles/Global";
+
+.paragraph {
+  @include paragraph($fontSizeM);
+}
+
+.imageContainer {
+  padding: 0;
+}
