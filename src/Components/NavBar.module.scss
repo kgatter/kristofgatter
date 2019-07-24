@@ -13,6 +13,7 @@
 }
 .BackLink {
   color: black;
+  transition: color 150ms;
 
   &:hover {
     text-decoration: none;

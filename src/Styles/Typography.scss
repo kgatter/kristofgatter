@@ -20,6 +20,5 @@ $standardSpacing: 20px;
 @mixin paragraph($fontSizeThis) {
     font-family: $fontFamily;
     font-size: $fontSizeThis;
-    line-height: 1.3em;
     font-weight: 400;
 }
