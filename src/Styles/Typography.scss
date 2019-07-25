@@ -8,17 +8,19 @@ $fontSizeXS: 10px;
 
 $fontFamily: 'Graphik Web', sans-serif;
 
-$standardSpacing: 20px;
+$standardSpacing: 30px;
 
 @mixin headline($fontSizeThis) {
     font-family: $fontFamily;
-    font-size: $fontSizeL;
+    font-size: $fontSizeThis;
     line-height: 1.2em;
     font-weight: 400;
+    letter-spacing: -0.01em;
 }
 
 @mixin paragraph($fontSizeThis) {
     font-family: $fontFamily;
     font-size: $fontSizeThis;
     font-weight: 400;
+    letter-spacing: -0.01em;
 }

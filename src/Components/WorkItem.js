@@ -17,21 +17,19 @@ export class WorkItem extends React.Component {
       <div className={itemClasses}>
         <Container>
           <Row>
-            <Col>
+            <Col xs={12}>
               <h1>{this.props.headline}</h1>
             </Col>
           </Row>
-          { this.props.image ?
           <Row>
-            <Col xs={12}>
-              <img width="100%" src={this.props.image} />
-            </Col>
-          </Row>
-          : null }
-          <Row>
-            <Col md="8">
+            <Col md={6}>
               <p className={styles.paragraph}>{this.props.paragraph}</p>
             </Col>
+            { this.props.image ?
+              <Col sm={12} md={6}>
+                <img width="100%" src={this.props.image} />
+              </Col>
+            : null }
           </Row>
         </Container>
         </div>

@@ -2,9 +2,18 @@
 @import "./Typography";
 
 
-body {
-  font-family: $fontFamily;
-  font-size: $fontSizeL;
+body, p {
+  @include paragraph($fontSizeL);
+  @include media-breakpoint-down(xs) {
+    @include paragraph($fontSizeM);
+  }
+}
+
+h1 {
+  @include headline($fontSizeXL);
+  @include media-breakpoint-down(xs) {
+    @include headline($fontSizeL);
+  }
 }
 
 h1, h2, h3, h4, h5 {
@@ -13,6 +22,7 @@ h1, h2, h3, h4, h5 {
 }
 
 p {
+  white-space: pre-wrap;
   margin-bottom: 1em;
   &:last-of-type {
     margin-bottom: 2em;
