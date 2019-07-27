@@ -4,6 +4,20 @@
   @include paragraph($fontSizeM);
 }
 
-.imageContainer {
-  padding: 0;
+.image {
+  position: relative;
+  margin-top: -3%;
+  @include media-breakpoint-down(md) {
+    margin-top: 0;
+  }
+}
+
+.ReactPlayer {
+  position: relative;
+  margin-left: auto;
+  margin-top: -3%;
+  @include media-breakpoint-down(md) {
+    margin-top: 0;
+    margin-right: auto;
+  }
 }
