@@ -34,7 +34,7 @@ function WorkPage() {
                   <h1>{headline}</h1>
                     <p>{paragraph1}</p>
                     <p>{paragraph2}</p>
-                  <a href="mailto:mail@kristofgatter.com"><KGButton green>{button1}</KGButton></a>
+                    <a href="mailto:mail@kristofgatter.com?subject=Requesting a Portfolio&body=I'm interested in more of your work. Please send me a PDF portfolio."><KGButton green>{button2}</KGButton></a>
               </Col>
             </Row>
         </Container>
