@@ -13,14 +13,12 @@ import { ReactComponent as BackButton } from '../Images/backbutton.svg';
 export class NavBar extends React.Component {
 
     static propTypes = {
-      match: PropTypes.object.isRequired,
       location: PropTypes.object.isRequired,
-      history: PropTypes.object.isRequired
     };
 
     render() {
 
-    const { match, location, history } = this.props;
+    const { location } = this.props;
     const currentLocationHome = location.pathname.length > 1;
 
     const navClasses = classNames(
