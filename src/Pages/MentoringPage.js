@@ -14,10 +14,9 @@ function MentoringPage() {
     button1 = "Get in Touch",
     teachingH1 = "Teaching",
     teachingP1 = 'Because I believe you can’t be a good digital product designer without understanding and using the underlying technologies, I have created a course curriculum and a bespoke teaching app in order to teach web tech to students studying visual communcations at the Berlin University of Arts, my alma mater.\n\nThe course ran 2013-2017, and utilized a custom web-app running on node.js / socket.io to bring interactive exercises and code examples directly on the students’ computers’ screens.\n\nDeveloping the app and the coursework was part of my own diploma at the university in 2014.\n\nI was also mentor-in-residence at Startup Institute, an adult education startup based in Boston, during their brief tenure in Berlin, teaching a course on UX and human centered design.',
-    oxH1 = "OX Collective & Berliner Philharmoniker (2018–)",
-    oxP1 = "OX Collective is a design collective based in Berlin. They are the creators of the award-winning Digital Concert Hall app of the Berliner Philharmoniker. I have been working with them to create a strategy on how to move their client toward a more structured and fact-based decision-making process concerning their digital products."
-
-
+    oxH1 = "Ox Collective & Berliner Philharmoniker (2018–)",
+    oxP1 = "Ox Collective is a design collective based in Berlin. They are the creators of the award-winning Digital Concert Hall app of the Berliner Philharmoniker. I have been working with them to create a strategy on how to move their client toward a more structured and fact-based decision-making process concerning their digital products."
+    
     return <Container>
             <Row className={pageStyles.Row}>
               <Col md="8" fluid>
