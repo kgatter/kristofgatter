@@ -12,3 +12,11 @@
 .Headline {
 
 }
+
+.LogoGraveyard {
+  margin-top: $standardSpacing;
+  max-width: 100%;
+  @include media-breakpoint-up(lg) {
+    max-width: 70%;
+  }
+}
