@@ -1,7 +1,8 @@
 const LINKS = {
     "ROOT": "/",
     "WORK": "/work",
-    "MENTORING": "/mentoring"
+    "MENTORING": "/mentoring",
+    "IMPRESSUM": "/impressum"
 };
 
 

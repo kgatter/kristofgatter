@@ -1,0 +1,19 @@
+@import '../Styles/Global';
+
+.Link {
+  font-size: $fontSizeM;
+  color: black;
+  svg {
+    position: relative;
+    top: -2px;
+    margin-left: 0px;
+    transition: margin-left 250ms;
+  }
+  &:hover {
+    color: $blue;
+    text-decoration: none;
+    svg {
+      margin-left: 7px;
+    }
+  }
+}

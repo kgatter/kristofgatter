@@ -7,6 +7,7 @@ import {LINKS} from "./Links";
 import NavBar from "./Components/NavBar";
 import MainPage from "./Pages/MainPage";
 import WorkPage from "./Pages/WorkPage";
+import ImpressumPage from "./Pages/ImpressumPage";
 import MentoringPage from "./Pages/MentoringPage";
 
 
@@ -40,6 +41,7 @@ function App() {
               <Route exact path={LINKS.ROOT} component={MainPage} />
               <Route exact path={LINKS.WORK} component={WorkPage} />
               <Route exact path={LINKS.MENTORING} component={MentoringPage} />
+              <Route exact path={LINKS.IMPRESSUM} component={ImpressumPage} />
             </Switch>
           </ScrollToTop>
         </Router>

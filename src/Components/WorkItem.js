@@ -3,7 +3,7 @@ import {Row, Col, Container} from 'reactstrap';
 import styles from './WorkItem.module.scss';
 import classNames from 'classnames';
 // import {Button} from 'reactstrap';
-import ReactPlayer from 'react-player'
+import ReactPlayer from 'react-player';
 
 export class WorkItem extends React.Component {
 
@@ -32,6 +32,9 @@ export class WorkItem extends React.Component {
           <Row>
             <Col lg={6} >
               <p className={styles.paragraph}>{this.props.paragraph}</p>
+              { this.props.worklink ?
+              <p>{this.props.worklink}</p>
+              : null}
             </Col>
             { this.props.image ?
               <Col lg={6}>

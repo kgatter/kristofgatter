@@ -10,3 +10,9 @@
 .smallParagraph {
   @include paragraph($fontSizeM);
 }
+
+.ImpressumLink {
+  color: grey;
+  font-size: $fontSizeS;
+  margin-top: $standardSpacing * 2;
+}

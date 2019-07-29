@@ -63,6 +63,8 @@ function MainPage() {
               <Col>
                 <h2>Let's talk about how we can work together.</h2>
                 <a href="mailto:mail@kristofgatter.com"><KGButton green>{button1}</KGButton></a>
+                <br /><br />
+                <Link className={pageStyles.ImpressumLink} to={LINKS.IMPRESSUM}>Impressum</Link>
               </Col>
             </Row>
         </Container>

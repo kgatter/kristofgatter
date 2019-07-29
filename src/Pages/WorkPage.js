@@ -5,6 +5,8 @@ import {Link} from "react-router-dom";
 
 import KGButton from "../Components/Button";
 import WorkItem from "../Components/WorkItem";
+import WorkLink from '../Components/WorkLink';
+
 import pageStyles from "./PageLayout.module.scss";
 
 import ImageAtlantisKY1 from "../Images/Work/AtlantisKY1.png";
@@ -47,6 +49,7 @@ function WorkPage() {
           headline={atlantisH1}
           paragraph={atlantisP1}
           image={ImageAtlantisKY1}
+          worklink={<WorkLink to="http://atlantishq.com" label="Atlantis"/>}
         />
         <WorkItem
           className={pageStyles.Row}
@@ -54,18 +57,21 @@ function WorkPage() {
           paragraph={valoraP1}
           video={VideoAvec}
           poster={ImageAvec}
+          worklink={<WorkLink to="https://avec.ch/de/avecx/" label="Avec X"/>}
         />
         <WorkItem
           className={pageStyles.Row}
           headline={modulorH1}
           paragraph={modulorP1}
           image={ImageModulor}
+          worklink={<WorkLink to="https://www.modulor.de/" label="Modulor"/>}
         />
         <WorkItem
           className={pageStyles.Row}
           headline={siH1}
           paragraph={siP1}
           image={ImageSI}
+          worklink={<WorkLink to="https://www.small-improvements.com/" label="Small Improvements"/>}
         />
         <Container>
           <Row>
