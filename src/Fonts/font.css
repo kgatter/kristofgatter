@@ -1,8 +1,19 @@
+/*
+        This font software is the property of Commercial Type.
+
+        You may not modify the font software, use it on another website, or install it on a computer.
+
+        License information is available at http://commercialtype.com/eula
+        For more information please visit Commercial Type at http://commercialtype.com or email us at info[at]commercialtype.com
+
+        Copyright (C) 2019 Schwartzco Inc.
+        License: 1907-USRMIG
+*/
+
+
 @font-face {
   font-family: 'Graphik Web';
-  src: url('Graphik-Medium-Web.eot');
-  src: url('Graphik-Medium-Web.eot?#iefix') format('embedded-opentype'),
-       url('Graphik-Medium-Web.woff2') format('woff2'),
+  src: url('Graphik-Medium-Web.woff2') format('woff2'),
        url('Graphik-Medium-Web.woff') format('woff');
   font-weight:  500;
   font-style:   normal;
@@ -11,9 +22,7 @@
 
 @font-face {
   font-family: 'Graphik Web';
-  src: url('Graphik-Regular-Web.eot');
-  src: url('Graphik-Regular-Web.eot?#iefix') format('embedded-opentype'),
-       url('Graphik-Regular-Web.woff2') format('woff2'),
+  src: url('Graphik-Regular-Web.woff2') format('woff2'),
        url('Graphik-Regular-Web.woff') format('woff');
   font-weight:  400;
   font-style:   normal;
