@@ -49,7 +49,7 @@ function WorkPage() {
           headline={atlantisH1}
           paragraph={atlantisP1}
           image={ImageAtlantisKY1}
-          worklink={<WorkLink to="http://atlantishq.com" label="Atlantis"/>}
+          worklink={<WorkLink to="https://hackerbay.com" label="Hackerbay"/>}
         />
         <WorkItem
           className={pageStyles.Row}
