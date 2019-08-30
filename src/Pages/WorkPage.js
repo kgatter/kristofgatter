@@ -57,7 +57,7 @@ function WorkPage() {
           paragraph={valoraP1}
           video={VideoAvec}
           poster={ImageAvec}
-          worklink={<WorkLink to="https://avec.ch/de/avecx/" label="Avec X"/>}
+          worklink={<WorkLink to="https://hackerbay.com/case-study/valora-avec" label="Hackerbay Case Study"/>}
         />
         <WorkItem
           className={pageStyles.Row}
