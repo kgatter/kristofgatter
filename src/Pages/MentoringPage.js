@@ -22,6 +22,7 @@ function MentoringPage() {
     oxH1 = "Ox Collective & Berliner Philharmoniker (2018–)",
     oxP1 = "Ox Collective is a design collective based in Berlin. They are the creators of the award-winning Digital Concert Hall app of the Berliner Philharmoniker. I have been working with them to create a strategy on how to move their client toward a more structured and fact-based decision-making process concerning their digital products.",
     workshopsH1 = "Innovation Workshops",
+    // eslint-disable-next-line no-multi-str
     workshopsP1 = 'I regularly participate as a design mentor in workshops for startups and established companies interested in innovation – e.g. the accelerator camp Power to Idea in cooperation with the online magazine Gründerszene and the innovation agency Ignore Gravity seen in the photo. I usually help participants with input on visual stroytelling, creating pitch presentations and mock-ups.'
 
     return <Container>

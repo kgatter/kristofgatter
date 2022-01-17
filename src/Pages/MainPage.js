@@ -50,13 +50,13 @@ function MainPage() {
               <Col>
                 <h1>References</h1>
                 <h3>{workedfor}</h3>
-                <img className={styles.LogoGraveyard} src={ImageWorkedfor} />
+                <img className={styles.LogoGraveyard} src={ImageWorkedfor} alt="Mercedes-Benz, Modulor, solarisBank, Cantinio, Avec, Red Bull, DroidCon, Innogy Stiftung, Grace Accelerator, Kraftwerk City Accelerator Bremen, Golem.DE, Zuper, Zeiss, Wired Campus, EWE, eBay" />
               </Col>
             </Row>
             <Row className={pageStyles.Row}>
               <Col>
                 <h3>{workedwith}</h3>
-                <img className={styles.LogoGraveyard} src={ImageWorkedwith} />
+                <img className={styles.LogoGraveyard} src={ImageWorkedwith} alt="HackerBay, DesignIt, Ignore Gravity, Beluga Strategic Design, OX Collective" />
               </Col>
             </Row>
             <Row className={pageStyles.Row}>

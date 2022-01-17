@@ -2,7 +2,6 @@ import React from 'react';
 import {Row, Col, Container} from 'reactstrap';
 import styles from './WorkItem.module.scss';
 import classNames from 'classnames';
-// import {Button} from 'reactstrap';
 import ReactPlayer from 'react-player';
 
 export class WorkItem extends React.Component {
@@ -38,7 +37,7 @@ export class WorkItem extends React.Component {
             </Col>
             { this.props.image ?
               <Col lg={6}>
-                <img className={styles.image} width="100%" src={this.props.image} />
+                <img className={styles.image} width="100%" alt="Product Teaser" src={this.props.image} />
               </Col>
             : null }
             { this.props.video ?

@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './WorkLink.module.scss';
-import classNames from 'classnames';
 import PropTypes from "prop-types";
 import { ReactComponent as LinkIcon } from '../Images/link.svg';
 
@@ -17,7 +16,7 @@ export class KGButton extends React.Component {
 
 
     return (
-      <a href={this.props.to} className={styles.Link} target="_blank">{this.props.label}&nbsp;&nbsp;<LinkIcon /></a>
+      <a href={this.props.to} className={styles.Link} target="_blank" rel="noopener noreferrer">{this.props.label}&nbsp;&nbsp;<LinkIcon /></a>
       )
     }
 }

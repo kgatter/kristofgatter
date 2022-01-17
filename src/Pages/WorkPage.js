@@ -1,7 +1,5 @@
 import React from 'react';
 import {Row, Col, Container} from 'reactstrap';
-import {LINKS} from "../Links";
-import {Link} from "react-router-dom";
 
 import KGButton from "../Components/Button";
 import WorkItem from "../Components/WorkItem";
@@ -21,7 +19,6 @@ function WorkPage() {
     paragraph1 = "I'm at my best when involved in building a product from the first drafts on a whiteboard to coding the last polishes of the UI, taking a holistic design approach and constantly adjusting the parameters of my role according to the needs of the project.",
     paragraph2 = "Check out some examples of my work below or get in touch to request a full portfolio.",
     paragraph3 = "To get a fuller picture, feel free to get in touch with me and request a more extensive PDF portfolio.",
-    button1 = "Get in Touch",
     button2 = "Request a Portfolio",
     atlantisH1 = "Atlantis KY1 (2019)",
     atlantisP1 = `Atlantis KY1 is a productivity software for machine workers and process engineers, created by Hackerbay, built on their Atlantis platform. I was the principal designer on the project. I facilitated several workshops with the CEO, the CTO and project management, helping to transform the vision of the product into an actual working MVP in less than three months. \n\nBesides the theoretical and UX/UI work, I've been involved with creating branding assets, presentations, as well as writing code for the UI.`,
