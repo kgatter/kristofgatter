@@ -43,7 +43,7 @@ export class NavBar extends React.Component {
             <Col className={styles.NavCol}>
               <Link className={styles.BackLink} to={"/"}>
                 {currentLocationHome ? <BackButton className={backButtonClasses} /> : null}
-                <span>Kristof Gatter <b>Digital Product Designer</b></span>
+                <span>Reuven I. Kristof Gatter <b>Digital Product Designer</b></span>
               </Link>
               {currentLocationHome ? <span className={locationDisplayClasses}>{locationDisplayText}</span> : null}
             </Col>

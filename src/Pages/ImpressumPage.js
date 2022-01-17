@@ -10,8 +10,8 @@ function ImpressumPage() {
             <Row className={[pageStyles.Row, "justify-content-between"].join(' ')}>
                 <Col xs={12} md={7} fluid className="text-center text-md-left order-2 order-md-1">
                   <h1>Impressum</h1>
-                    <p>Kristof Gatter<br />
-                    Freiberuflicher Designer<br />Weserstr 77<br />12059 Berlin
+                    <p>Reuven Itzhak Kristof Gatter<br />
+                    Freiberuflicher Designer<br />Friedrichsruher Str. 30B<br />14193 Berlin
                       </p>
                       <p>
                         E-Mail: <a href="mailto:mail@kristofgatter.com">mail@kristofgatter.com</a><br />
