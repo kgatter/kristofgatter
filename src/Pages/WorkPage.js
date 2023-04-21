@@ -9,9 +9,11 @@ import pageStyles from "./PageLayout.module.scss";
 
 import ImageAtlantisKY1 from "../Images/Work/AtlantisKY1.png";
 import ImageSI from "../Images/Work/SI.png";
+import ImageGotPhoto from "../Images/Work/gotphoto.png";
 import VideoAvec from "../Images/Work/avecapp.mp4";
 import ImageAvec from "../Images/Work/avecapp.png";
 import ImageModulor from "../Images/Work/modulorMobile.png";
+import ImageSpareTech from "../Images/Work/sparetech.png";
 
 function WorkPage() {
 
@@ -27,8 +29,12 @@ function WorkPage() {
     valoraH1 = "Avec App (2019)",
     valoraP1="Avec is a convenience store brand created by Valora, a Swiss retail holding company operating mainly in German-speaking countries. Working with the Hackerbay development team, we created a mobile app for Avec X, the experimental, cashierless flagship store of the brand located in Zurich's Central Station.\n\nThe app enables a fully cashierless shopping experience. Customers can scan and pay items directly on their phones and can even use the app to unlock the doors at night or whenever no support personnel is present. After a successful test run in April 2019, a rollout of this system to other locations in Switzerland is underway.",
     modulorH1 = "Modulor (2018)",
-    modulorP1 = "Modulor is a large arts supply retailer in Berlin, with a unique standing among artists and architects across the city. As a freelance UX consultant for their online division, I have helped optimize their current online retail offerings in several ways. Among many smaller upgrades, several iterations on the UX/UI of their online furniture configurator including a mobile-friendly version and improving the product detail view esp. on mobile devices were the most impactful. I also had an impact on the product design process itself: I advocated for the introduction of a living styleguide enabling the in-house graphic desiger to directly tweak the look and feel of UI elements in the store, moving the development process toward a more agile one.\n\nThese improvements were made possible by workshops with employees from all departments of the company; mapping out customer journeys as well as vigorous user- and A/B testing, extensive discussions with employees about and advocacy for a leaner product design process were all necessary in order to generate buy-in across the board."
-
+    modulorP1 = "Modulor is a large arts supply retailer in Berlin, with a unique standing among artists and architects across the city. As a freelance UX consultant for their online division, I have helped optimize their current online retail offerings in several ways. Among many smaller upgrades, several iterations on the UX/UI of their online furniture configurator including a mobile-friendly version and improving the product detail view esp. on mobile devices were the most impactful. I also had an impact on the product design process itself: I advocated for the introduction of a living styleguide enabling the in-house graphic desiger to directly tweak the look and feel of UI elements in the store, moving the development process toward a more agile one.\n\nThese improvements were made possible by workshops with employees from all departments of the company; mapping out customer journeys as well as vigorous user- and A/B testing, extensive discussions with employees about and advocacy for a leaner product design process were all necessary in order to generate buy-in across the board.",
+    gotphotoH1 = "Design Lead @ GotPhoto (2019-2021)",
+    gotphotoP1 = `GotPhoto is a software solution for photographers that helps them streamline their workflow and grow their business. It offers online galleries, automated image processing, order management, and marketing tools.\n\nAfter a short engagement as a freelance consultant, I was invited to become the Design Lead of the company. I set up and managed a small design team including defining its responsibilities, and oversaw its day-to-day operations.\n\nDuring my tenure, I provided product design and strategy input to the C-Level and initiated a tech stack change to increase iteration speed and redefine the UI tech stack. In just four months, I developed a new shop client and defined a new UI design language.\n\nSubsequently, I overhauled the product's information architecture documentation, defined a new product direction and UI design language, and assembled a feature team to overhaul the product's administration UI with a new UX paradigm that measurably increased user satisfaction. I also set up a basic design system using Storybook / Chromatic including an automated design approval process.`,
+    sparetechH1 = `Senior Product Designer @ Sparetech (2022 –`,
+    sparetechP1 = `I am currently working full time at Sparetech. Sparetech is a technology company based in Stuttgart, Germany, that offers a software solution for spare parts management in the industrial sector. I’ve joined their design team as Senior Product Designer in 2022.`
+    
 
     return <div>
         <Container>
@@ -41,6 +47,20 @@ function WorkPage() {
               </Col>
             </Row>
         </Container>
+        <WorkItem
+          className={pageStyles.Row}
+          headline={sparetechH1}
+          paragraph={sparetechP1}
+          image={ImageSpareTech}
+          worklink={<WorkLink to="https://sparetech.io" label="SpareTech"/>}
+        />
+        <WorkItem
+          className={pageStyles.Row}
+          headline={gotphotoH1}
+          paragraph={gotphotoP1}
+          image={ImageGotPhoto}
+          worklink={<WorkLink to="https://gotphoto.com" label="GotPhoto"/>}
+        />
         <WorkItem
           className={pageStyles.Row}
           headline={atlantisH1}
