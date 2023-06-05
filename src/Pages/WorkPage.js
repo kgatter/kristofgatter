@@ -34,9 +34,9 @@ function WorkPage() {
     gotphotoH1 = "Design Lead @ GotPhoto (2019 – 2021)",
     gotphotoP1 = `GotPhoto is a software solution for photographers that helps them streamline their workflow and grow their business. It offers online galleries, automated image processing, order management, and marketing tools.\n\nAfter a short engagement as a freelance consultant, I was invited to become the Design Lead of the company. I set up and managed a small design team including defining its responsibilities, and oversaw its day-to-day operations.\n\nDuring my tenure, I provided product design and strategy input to the C-Level and initiated a tech stack change to increase iteration speed and redefine the UI tech stack. In just four months, I developed a new shop client and defined a new UI design language.\n\nSubsequently, I overhauled the product's information architecture documentation, defined a new product direction and UI design language, and assembled a feature team to overhaul the product's administration UI with a new UX paradigm that measurably increased user satisfaction. I also set up a basic design system using Storybook / Chromatic including an automated design approval process.`,
     sparetechH1 = `Senior Product Designer @ Sparetech (2022 – )`,
-    sparetechP1 = `I am currently working full time at Sparetech. Sparetech is a technology company based in Stuttgart, Germany, that offers a software solution for spare parts management in the industrial sector. I’ve joined their design team as Senior Product Designer in 2022.`,
-    improvemeH1 = "Co-Founder @ improveme.io (2023 – )",
-    improvemeP1 = "I started my passion project, improveme.io with two friends. It is a webapp that empowers anyone, regardless of the context or setting, to collect feedback from the people they collaborate with. My hope is that it will help people to take ownership of peer feedback processes in settings that traditionally don't yet have structured feedback. Stay tuned for updates."
+    sparetechP1 = `I am currently working full time at Sparetech. Sparetech is a technology company based in Stuttgart, Germany, that offers a software solution for spare parts management in the industrial sector. I’ve joined their design team as Senior Product Designer in 2022.`
+    // improvemeH1 = "Co-Founder @ improveme.io (2023 – )",
+    // improvemeP1 = "I started my passion project, improveme.io with two friends. It is a webapp that empowers anyone, regardless of the context or setting, to collect feedback from the people they collaborate with. My hope is that it will help people to take ownership of peer feedback processes in settings that traditionally don't yet have structured feedback. Stay tuned for updates."
 
     return <div>
         <Container>
@@ -49,13 +49,6 @@ function WorkPage() {
               </Col>
             </Row>
         </Container>
-        <WorkItem
-          className={pageStyles.Row}
-          headline={improvemeH1}
-          paragraph={improvemeP1}
-          image={ImageImproveme}
-          worklink={<WorkLink to="#" label="Not Yet Launched, Stay Tuned "/>}
-        />
         <WorkItem
           className={pageStyles.Row}
           headline={sparetechH1}
